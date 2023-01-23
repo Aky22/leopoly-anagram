@@ -25,7 +25,7 @@ function validate(req, res) {
   }
 }
 
-router.post('/search', function(req, res, next) {
+router.post('/anagram', function(req, res, next) {
   validate(req, res);
   res.json({data: searchAnagrams(req.body.word)});
 })

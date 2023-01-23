@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     async search() {
-      this.anagrams = (await (await fetch('http://localhost:3000/search',{
+      this.anagrams = (await (await fetch('http://localhost:3000/anagram',{
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
