@@ -1,0 +1,9 @@
+services:
+  web:
+    build: anagram-frontend
+    ports:
+    - 80:80
+  server:
+    build: anagram-backend
+    ports:
+      - 3000:3000
