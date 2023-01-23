@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . .
 RUN corepack enable
 RUN corepack prepare yarn@3.3.1 --activate
+RUN yarn
 RUN yarn run build
 
 # production stage
